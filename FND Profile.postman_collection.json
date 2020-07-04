@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "29723b10-fdb4-4729-b63e-74e50c360e22",
+		"name": "FND Profile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get profile option value xml",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<POST_Input>\n    <InputParameters>\n        <NAME>6</NAME>\n    </InputParameters>\n</POST_Input>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://vis1227.togglefox.com:8000/webservices/rest/FndProfile/get/",
+					"protocol": "http",
+					"host": [
+						"vis1227",
+						"togglefox",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"webservices",
+						"rest",
+						"FndProfile",
+						"get",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get profile option value json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"InputParameters\": {\n      \"NAME\": \"APPS_FRAMEWORK_AGENT\"\n   }\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://vis1227.togglefox.com:8000/webservices/rest/FndProfile/get/",
+					"protocol": "http",
+					"host": [
+						"vis1227",
+						"togglefox",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"webservices",
+						"rest",
+						"FndProfile",
+						"get",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "changepassword",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "michael",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cb918ea1-4463-4ccd-bd3e-073854ce8545",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e9e4d68c-86c2-4c16-a6fa-0265d946013f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
